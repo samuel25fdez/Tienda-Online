@@ -1,0 +1,179 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#333;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0;
+    
+    
+}
+
+
+.primer-parrafo {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+
+}
+
+.container-section {
+    margin-top: 1000px;
+}
+
+.img-logo {
+    width: 320px;
+} 
+
+header {
+    background: rgb(245, 221, 2);
+    color: rgb(245, 221, 2);
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    right: 0;
+
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+
+.logo-nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.menu-icon{
+    display: none;
+
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.navigation ul li{
+    display: inline-block;
+
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5.px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.navigation ul li a:hover{
+    background: #4a4a4a;
+
+}
+
+footer{
+    
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+    bottom: 0;
+
+}
+
+html {
+    background: url(images/imagen1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.fondo-web {
+    background-size: auto;
+}
+
+section{
+    background: white;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+
+}
+
+.carrusel-div {
+    position:static;
+    width: 800px;
+    height: 400px;
+    margin-left: 28%;
+    margin-right: 10%;
+    margin-top:180px;
+    margin-bottom: 0px;
+    
+}
+
+
+
+
+
+/*estilos para la página de inicio de sesión*/
+
+
+
+
+
+.div-inicio{
+    margin-top: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+
+
+/*estilos para la página de registro*/
+
+
+.main-registro {
+    margin: 10%;
+    margin-top: 200px;
+}
+
+/*estilos para newsletter*/
+
+
+.widget-widget-blog-subscription {
+ 
+margin-top: 0%;
+background-color: rgb(245, 221, 2);
+width: 100%;
+
+
+}
+
+/*foooter*/
+
+footer {
+
+    background-color: blue;
+    color: chocolate;
+    padding: 50px 0;
+}
