@@ -25,10 +25,18 @@ body {
 .container-section {
     margin-top: 1000px;
 }
+.container-preguntas {
+    margin-top: 140px;
+}
 
 .img-logo {
     width: 320px;
 } 
+.lista-preguntas {
+    margin-left: 30px;
+    padding-left: 0%;
+    background: rgb(81, 81, 179);
+}
 
 header {
     background: rgb(245, 221, 2);
@@ -119,6 +127,7 @@ section{
 
 }
 
+
 .carrusel-div {
     position:static;
     width: 800px;
@@ -173,7 +182,53 @@ width: 100%;
 
 footer {
 
-    background-color: blue;
-    color: chocolate;
-    padding: 50px 0;
+    
+    background: black;
+    width: 100%;
+    height: auto;   
 }
+
+#pie-footer {
+    background: #333;
+    width: 100%;
+    height: auto;
+}
+
+.titulo-footer {
+    color: rgb(245, 221, 2);
+    text-align: center;
+    position:relative;
+    top: 10px;
+}
+
+
+.contacto {
+    color: rgb(245, 221, 2);
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 800;
+}
+
+.titulo-contacto {
+    color: rgb(245, 221, 2);
+    
+}
+
+
+.titulo-colonia {
+    color: rgb(245, 221, 2);
+    margin-left: 25px;
+}
+
+
+
+
+
+#fondo-footer {
+    background: black;
+    width: 100%;
+    height: 50px;
+
+}
+
+

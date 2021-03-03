@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Deportivas molonas
+            Zapatillas molonas
         </title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/estilo.css" rel="stylesheet">
@@ -53,6 +53,7 @@
               </nav>
             
         </header>
+
         <section class="carrusel-div">
 
             
@@ -86,6 +87,11 @@
     
             
           </section>
+
+
+
+
+        
 
           
        
@@ -144,88 +150,44 @@
 
         <footer>
 
-         <div class="container">
+        
 
-         <div class="row">
+                <div class="col-md-12">
+                  <p class="contacto">
+                    CONTACTA CON NOSOTROS
+                  </p>
 
-            <div class="col-6">
+                  <p class="titulo-contacto">
+                    zapatillasmolonas@gmail.com
+                  </p>
 
-              <div class="row">
+                  <p>
 
-                <div class="col-8">
+                      
 
-                  <h2>About us</h2>
+                     <span class="titulo-colonia">
+                      2021 - Software Ecommerce desarrollado por Lawebdelaszapas
 
-              <p>Lorem ipsum dolor sit amet.</p>
+                     </span>
 
-              <div class="redes">
+                         </p>
 
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i class="fa"></i>
-                      </a>
-                  </li>
+                         <a class="nquestion-link" href="preguntas.html">PREGUNTAS FRECUENTES</a>
 
-                  <li>
-                    <a href="#">
-                      <i class="fa"></i>
-                      </a>
-                  </li>
 
-                  <li>
-                    <a href="#">
-                      <i class="fa"></i>
-                      </a>
-                  </li>
-
+                         
+                       </div>
+                    </div>
                 </div>
-
-
-              </div>
-
-
-            </div>
-
-
-            <div class="col-2">
-
-              <h2>About us</h2>
-
-              <p>Lorem ipsum dolor sit amet.</p>
-
-
-            </div>
+             </div>
+             
 
 
 
-            <div class="col-2">
 
-              <h2>About us</h2>
-
-              <p>Lorem ipsum dolor sit amet.</p>
-
+             </div>
               
-                  
-
-
-
-
-
-
-                </ul> 
-
-              </div>
-
-
-            </div>
-
-
-          </div>
-
-         </div>
-          
-
+        
 
 
 
