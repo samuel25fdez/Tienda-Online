@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -87,6 +92,25 @@
     
             
           </section>
+
+          <?php
+
+
+include_once "app/Conexion.inc.php";
+
+include_once "app/RepositorioUsuarios.inc.php";
+
+Conexion::abrir_conexion();
+
+$usuarios=RepositorioUsuarios::obtener_numero_usuarios(Conexion::obtener_conexion());
+
+echo $usuarios;
+
+Conexion::cerrar_conexion();
+
+
+
+?>
 
 
 

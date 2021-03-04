@@ -10,7 +10,8 @@ class Conexion {
 
                 include_once "config.inc.php";
 
-                self::$conexion=new PDO("mysql:host=$nombre_servidor; dbname=$nombre_bbdd", $nombre_usuario, $password);
+                self::$conexion = new PDO('mysql:host='.NOMBRE_SERVIDOR.'; dbname='.NOMBRE_BBDD, NOMBRE_USUARIO, PASSWORD);
+
 
                 self::$conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 

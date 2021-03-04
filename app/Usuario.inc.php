@@ -11,7 +11,7 @@ class Usuario {
     public function __construct($id,$nombre_usuario,$email,$password,$fecha_registro) {
 
         $this->id=$id;
-        $this->nombre_usuario=$nombr_usuario;
+        $this->nombre_usuario=$nombre_usuario;
         $this->email=$email;
         $this->password=$password;
         $this->fecha_registro=$fecha_registro;

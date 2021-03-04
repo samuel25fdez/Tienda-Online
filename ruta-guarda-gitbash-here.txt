@@ -1,3 +1,14 @@
 git add .
 git commit -m "titulo del comit (primer commit, segundo ,etc.)"
+git status
 git push
+
+
+
+
+
+
+
+
+*
+(htdocs/website)
