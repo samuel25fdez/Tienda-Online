@@ -16,14 +16,14 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"> <img src="images/logo_large.png" alt="alt" class="img-logo"></a>
+                  <a class="navbar-brand" href="index.php"> <img src="images/logo_large.png" alt="alt" class="img-logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="inicio-sesion.html">Iniciar sesión</a> 
@@ -48,24 +48,24 @@
             
         </header>
 
-        <main class="main-registro">
+        <div class="main-registro">
 
-            <form class="row g-3">
+            <form class="row g-3" action="<?php echo $_SERVER[`PHP_SELF`] ?>" method="POST">
                 <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type="email" class="form-control" id="inputEmail4" name="email">
                 </div>
                 <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <label for="inputPassword4" class="form-label">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="inputPassword4" name="nombre">
                 </div>
                 <div class="col-12">
-                <label for="inputAddress" class="form-label">Nombre de Usuario</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <label for="inputAddress" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputAddress" name="password">
                 </div>
                 <div class="col-12">
-                <label for="inputAddress2" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <label for="inputAddress2" class="form-label">Repite Contraseña</label>
+                <input type="password" class="form-control" id="inputAddress2" name="password2">
                 </div>
                 <div class="col-md-6">
                 <label for="inputCity" class="form-label">Ciudad</label>
@@ -96,7 +96,7 @@
             </form>
 
 
-        </main>
+          </div>
 
 
 

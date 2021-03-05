@@ -162,9 +162,13 @@ section{
 
 
 .main-registro {
-    margin: 10%;
-    margin-top: 200px;
+    
+    margin-top: 450px;
+    border-radius: 3px;
+    
 }
+
+
 
 /*estilos para newsletter*/
 
