@@ -1,11 +1,54 @@
+<?php
+
+include_once "app/Conexion.inc.php";
+
+include_once "app/ValidadorRegistro.inc.php";
+
+include_once "app/RepositorioUsuarios.inc.php";
+
+include_once "app/Usuario.inc.php";
+
+include_once "app/config.inc.php";
+
+
+
+if(isset($_POST["enviar"])) {
+
+  Conexion::abrir_conexion();
+
+  
+
+  $validador=new ValidadorRegistro($_POST["email"], $_POST["nombre"], $_POST["password"], $_POST["password2"], Conexion::obtener_conexion());
+
+  Conexion::cerrar_conexion();
+
+
+
+
+}
+
+
+
+
+
+
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>
             Deportivas molonas
         </title>
-        <link href="css/estilo.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilo.css?v=<?php echo time(); ?>" />
         <link href="images/logo_small_icon_only_inverted.png" rel="icon">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -29,7 +72,7 @@
                         <a class="nav-link" href="inicio-sesion.html">Iniciar sesión</a> 
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Registrarse</a>
+                        <a class="nav-link" href="registro.php">Registrarse</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,49 +93,26 @@
 
         <div class="main-registro">
 
-            <form class="row g-3" action="<?php echo $_SERVER[`PHP_SELF`] ?>" method="POST">
-                <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="inputEmail4" name="email">
-                </div>
-                <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Nombre de Usuario</label>
-                <input type="text" class="form-control" id="inputPassword4" name="nombre">
-                </div>
-                <div class="col-12">
-                <label for="inputAddress" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputAddress" name="password">
-                </div>
-                <div class="col-12">
-                <label for="inputAddress2" class="form-label">Repite Contraseña</label>
-                <input type="password" class="form-control" id="inputAddress2" name="password2">
-                </div>
-                <div class="col-md-6">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                <label for="inputState" class="form-label">País</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>España</option>
-                    <option>Francia</option>
-                    <option>Alemania</option>
-                </select>
-                </div>
-                <div class="col-md-2">
-                <label for="inputZip" class="form-label">Código Postal</label>
-                <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                <div class="form-check">
-                    
-                    
-                </div>
-                </div>
-                <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
+        <form class="row g-3" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+
+
+                
+                
+                <?php
+
+                  if(isset($_POST["enviar"])) {
+
+                    include_once "plantillas/registro_validado.inc.php";
+
+                  }else {
+
+                    include_once "plantillas/registro_vacio.inc.php";
+
+                  }
+
+                ?>
+
+
             </form>
 
 

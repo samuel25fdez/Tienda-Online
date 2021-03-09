@@ -30,7 +30,7 @@ body {
 }
 
 .img-logo {
-    width: 320px;
+    width: 120px;
 } 
 .lista-preguntas {
     margin-left: 30px;
@@ -107,17 +107,8 @@ footer{
 
 }
 
-html {
-    background: url(images/imagen1.jpg) no-repeat center center fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-}
 
-.fondo-web {
-    background-size: auto;
-}
+
 
 section{
     background: white;
