@@ -1,57 +1,73 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    
     color:#333;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    margin: 0;
-    
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: black;
     
 }
+
+
 
 
 .primer-parrafo {
 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    background-image: url(images/imagen-fondo-web.png);
+    color: rgb(245, 221, 2);
+    box-sizing:content-box;
 }
 
 
-.container {
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
+.container-fluid {
+
+    background-color:rgb(245, 221, 2);
+    
+    
+}
+
+
+
 
 }
 
 .container-section {
     margin-top: 1000px;
+    
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: black;
+   
+    
 }
 .container-preguntas {
     margin-top: 140px;
 }
 
 .img-logo {
-    width: 120px;
+    width: 220px;
 } 
-.lista-preguntas {
-    margin-left: 30px;
-    padding-left: 0%;
-    background: rgb(81, 81, 179);
-}
+
 
 header {
     background: rgb(245, 221, 2);
     color: rgb(245, 221, 2);
     padding: 2rem 0;
+    padding-left: 280px;
+    padding-right: 280px;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     right: 0;
+    
 
 }
 
 header a{
-    color: black;
+    color: white;
     text-decoration: none;
 
 }
@@ -87,31 +103,40 @@ header a{
     display: block;
     padding: 0.5rem 1rem;
     transition: all 0.4s linear;
-    border-radius: 5.px;
+    border-radius: 5px;
     text-transform: uppercase;
     text-decoration: none;
 
 }
+
+
 
 .navigation ul li a:hover{
     background: #4a4a4a;
 
 }
 
-footer{
-    
-    padding: 4rem 0;
-    text-align: center;
-    margin-top: 6rem;
-    bottom: 0;
+
+.caja-titulo-productos {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: black; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: rgb(245, 221, 2); 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid rgb(245, 221, 2)
 
 }
 
 
-
-
 section{
-    background: white;
+    background: rgb(245, 221, 2);
     padding: 4rem 0;
     text-align: center;
     margin-top: 6rem;
@@ -127,6 +152,9 @@ section{
     margin-right: 10%;
     margin-top:180px;
     margin-bottom: 0px;
+    padding-top: 0%;
+    padding-bottom: 0px;
+    
     
 }
 
@@ -144,6 +172,30 @@ section{
     margin-top: 250px;
     margin-left: 50px;
     margin-right: 50px;
+    background-color: rgb(245, 221, 2);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 50px;
+
+}
+
+
+/*estilos pagina registro correcto*/
+
+
+.titulo-registro {
+
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 3px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: blueviolet;
+    margin-bottom: 100px;
+    margin-top: 400px;
+
 
 }
 
@@ -154,76 +206,100 @@ section{
 
 .main-registro {
     
-    margin-top: 450px;
-    border-radius: 3px;
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+    background-color: rgb(245, 221, 2);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
     
 }
 
 
 
-/*estilos para newsletter*/
 
 
-.widget-widget-blog-subscription {
- 
-margin-top: 0%;
-background-color: rgb(245, 221, 2);
-width: 100%;
 
 
+/*estilos vans*/
+
+.container-logos {
+    height: 10px;
+    width: 50%;
+    
+   margin-bottom: 0%;
+    float: right;
+
+    padding-left: 1px;
+    
+  
 }
+
+.container-logos-2 {
+    height: 10px;
+    width: 50%;
+    
+    margin-bottom: 0%;
+    float: left;
+    
+  
+}
+
+
+
+    
+
+
+
+
+
+
+
 
 /*foooter*/
 
-footer {
-
-    
-    background: black;
-    width: 100%;
-    height: auto;   
-}
-
-#pie-footer {
-    background: #333;
-    width: 100%;
-    height: auto;
-}
-
-.titulo-footer {
-    color: rgb(245, 221, 2);
-    text-align: center;
-    position:relative;
-    top: 10px;
-}
 
 
-.contacto {
-    color: rgb(245, 221, 2);
-    font-size: 20px;
-    margin-top: 35px;
-    font-weight: 800;
-}
 
-.titulo-contacto {
-    color: rgb(245, 221, 2);
-    
+
+
+
+
+
+
+
+
+
+.link-preguntas {
+
+    color:white;
+    margin-left: 38%;
+    float:left;
+
 }
 
 
 .titulo-colonia {
     color: rgb(245, 221, 2);
-    margin-left: 25px;
+    margin-left: 30%;
+    float:left;
+    
 }
 
 
 
 
 
-#fondo-footer {
-    background: black;
-    width: 100%;
-    height: 50px;
 
+
+.lista-preguntas {
+    margin-left: 30px;
+    padding-left: 0%;
+    background: rgb(81, 81, 179);
 }
 
 

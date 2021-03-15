@@ -1,5 +1,7 @@
 <?php
 
+include_once "RepositorioUsuarios.inc.php";
+
 class ValidadorRegistro {
 
     private $aviso_inicio;
@@ -71,6 +73,11 @@ class ValidadorRegistro {
 
             return "El nombre de usuario debe contener 20 caracteres como máximo.";
         }
+        if(RepositorioUsuarios::nombre_existe($conexion,$nombre)==true) {
+
+            return "Este nombre de usuario ya existe, pruebe con otro.";
+        }
+        
 
         return "";
     } 
@@ -89,6 +96,10 @@ class ValidadorRegistro {
         if(strlen($email)>40) {
 
             return "El email debe contener 40 caracteres como máximo.";
+        }
+        if(RepositorioUsuarios::email_existe($conexion,$email)==true) {
+
+            return "Este email ya se encuentra registrado. Por favor introduzca otro email o intente <a href=\"#\"> recuperar su contraseña.</a>";
         }
 
         return "";

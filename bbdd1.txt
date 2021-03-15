@@ -2,9 +2,9 @@ CREATE DATABASE tienda_online;
 USE tienda_online;
 CREATE TABLE usuarios (
 	id INT NOT NULL AUTO_INCREMENT,
-	nombre_usuario VARCHAR(40) NOT NULL,
-	email VARCHAR(40) NOT NULL,
-	password VARCHAR(30) NOT NULL,
+	nombre_usuario VARCHAR(40) UNIQUE NOT NULL,
+	email VARCHAR(40) UNIQUE NOT NULL,
+	password VARCHAR(255) NOT NULL,
 	fecha_registro DATETIME NOT NULL,
 	PRIMARY KEY(id)
 );

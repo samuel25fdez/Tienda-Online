@@ -36,7 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="inicio-sesion.html">Iniciar sesión</a> 
+                        <a class="nav-link" href="inicio-sesion.php">Iniciar sesión</a> 
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="registro.php">Registrarse</a>
@@ -60,7 +60,7 @@
 
         <section class="carrusel-div">
 
-            
+            <div>
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -87,6 +87,8 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
+              </div>
+
               </div>
     
             
@@ -120,9 +122,28 @@ Conexion::cerrar_conexion();
        
 
         
-        <section class="primer-parrafo">
-           <h2>NUESTROS PRODUCTOS</h2>
-        </section>
+<section class="primer-parrafo">
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="caja-titulo-productos"> <h2>NUESTROS PRODUCTOS</h2></div>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <br>
+        <br>
+        <br>
+       
+
+       
+
+     </section>
         
       
 
@@ -146,24 +167,46 @@ Conexion::cerrar_conexion();
             info@zapatillasmolonas.com
 
         </section>
-        
+
         <section>
 
-            <div class="widget-widget-blog-subscription">
 
-            
-           
-                <p>Subscribete a nuestro newsletter para estar informado de nuestras promociones en todo momento.</p>
-                <p>
-                    <input type="text" name="email" style="" placeholder="Introduce tu dirección de correo electrónico" value="" id="subscribe-field">
-                </p>
-                <p>
-                    <input type="submit" value="Subscribirse!">
-                </p>
-            </form>
 
+        <div class="container-logos" >
+            REDES SOCIALES
+         
+        
+          <div class="" >
+            <a href="#"><img src="images/social_facebook_fb_35.png"  width="50px" height="25px" alt="facebook"></a>
+            <a href="#"><img src="images/" alt="youtube"></a>
+            <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+          </div>
         </div>
+  
+
+          
+
+        
+
+          <div class="container-logos-2" >
+            <p>
+              CONTACTA CON NOSOTROS
+            </p>
+          
+            <p> 
+              zapatillasmolonas@gmail.com
+            </p>
+            
+          
+
+
+
+
+
         </section>
+        
+        
 
 
 
@@ -172,57 +215,56 @@ Conexion::cerrar_conexion();
 
 
         <footer>
+<br>
+<br>
+<br>
 
-        
+        <a class="link-preguntas" href="preguntas.html">PREGUNTAS FRECUENTES</a>
 
-                <div class="col-md-12">
-                  <p class="contacto">
-                    CONTACTA CON NOSOTROS
-                  </p>
+        <br>
+        <br>
+        <br>
+         
+            <p>
+          
+                
+          
+               <span class="titulo-colonia">
+                2021 - Página web desarrollada por Samuel Fernández Roca
+          
+               </span>
+          
+                   </p>
+          
+                   
 
-                  <p class="titulo-contacto">
-                    zapatillasmolonas@gmail.com
-                  </p>
-
-                  <p>
-
-                      
-
-                     <span class="titulo-colonia">
-                      2021 - Software Ecommerce desarrollado por Lawebdelaszapas
-
-                     </span>
-
-                         </p>
-
-                         <a class="nquestion-link" href="preguntas.html">PREGUNTAS FRECUENTES</a>
-
-
-                         
-                       </div>
-                    </div>
-                </div>
-             </div>
-             
-
-
-
-
-             </div>
-              
-        
-
-
-
-
-           
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-    </body>
-</html>
+                   
+          
+                   
+                 </div>
+              </div>
+          </div>
+          </div>
+          
+          
+          
+          
+          
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          </footer>
+          
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+          
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+          <script src="js/bootstrap.min.js"></script>
+          
+          </body>
+          </html>

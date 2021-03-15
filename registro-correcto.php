@@ -1,23 +1,46 @@
+<?php
+
+include_once "app/config.inc.php";
+include_once "app/Conexion.inc.php";
+include_once "app/RepositorioUsuarios.inc.php";
+include_once "app/Redirecciones.inc.php";
+
+
+if(isset($_GET["nombre"]) && !empty($_GET["nombre"])) {
+
+    $nombre=$_GET["nombre"];
+
+
+} else {
+
+    Redirecciones::redirigir(SERVIDOR);
+
+}
+
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>
-           Vans
+            Zapatillas molonas
         </title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/estilo.css?v=<?php echo time(); ?>" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link href="images/logo_small_icon_only_inverted.png" rel="icon">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        
-   <body>   
-
-    
 
     </head>
-  
-        <header>
+    <body>
+
+    <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#"> <img src="images/logo_large.png" alt="alt" class="img-logo"></a>
@@ -30,7 +53,7 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="inicio-sesion.html">Iniciar sesión</a> 
+                        <a class="nav-link" href="inicio-sesion.php">Iniciar sesión</a> 
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="registro.php">Registrarse</a>
@@ -51,84 +74,28 @@
               </nav>
             
         </header>
-        <br>
-        <br>
-
-
-        <section class="primer-parrafo">
-        
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-         <div class="caja"> <h2>NUESTROS PRODUCTOS VANS</h2></div>
-         
-          <br>
-          <br>
-          <br>
-          <br>
-         
-          <br>
-          <br>
-          <br>
-         
-
-         
-
-       </section>
-       
-       
-
-        
-
-        
       
 
-       
 
-     
+        <div class="titulo-registro">
 
-       
-
-       
-        
-       
+        <p>Gracias por registrarte <?php echo $nombre ?></p>
+        <p><a href="<?php echo RUTA_LOGIN ?>">Inicie sesión</a> para usar su cuenta!</p>
 
 
-
-
-
-
+        </div>
 
         <footer>
-          <div class="container-logos" >
-            REDES SOCIALES
+<br>
+<br>
+<br>
+
+        <a class="link-preguntas" href="preguntas.html">PREGUNTAS FRECUENTES</a>
+
+        <br>
+        <br>
+        <br>
          
-        
-          <div class="" >
-            <a href="#"><img src="images/social_facebook_fb_35.png" alt="facebook"></a>
-            <a href="#"><img src="images/" alt="youtube"></a>
-            <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
-            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
-          </div>
-        </div>
-  
-
-          
-
-        
-
-          <div class="" >
-            <p class="contacto">
-              CONTACTA CON NOSOTROS
-            </p>
-          
-            <p class="titulo-contacto">
-              zapatillasmolonas@gmail.com
-            </p>
-          
             <p>
           
                 
@@ -140,7 +107,7 @@
           
                    </p>
           
-                   <a class="nquestion-link" href="preguntas.html">PREGUNTAS FRECUENTES</a>
+                   
 
                    
           
@@ -163,12 +130,19 @@
           
           
           </footer>
-          
+        
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
           
           <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
           <script src="js/bootstrap.min.js"></script>
-          
-          </body>
-          </html>
+
+
+    </body>
+
+
+
+</html>
+        
+   
+
