@@ -199,4 +199,51 @@ class RepositorioUsuarios {
     }
 
 
+    public static function obtener_usuario_por_email($conexion, $email) {
+
+        $usuario=null;
+
+        if(isset($conexion)) {
+
+            try{
+                include_once "Usuario.inc.php";
+
+                $sql="select * from usuarios where email=:email";
+
+                $sentencia=$conexion->prepare($sql);
+
+                $sentencia->bindParam(":email",$email,PDO::PARAM_STR);
+
+                $sentencia->execute();
+
+                $resultado=$sentencia->fetch();
+
+                if(!empty($resultado)) {
+
+                    $usuario=new Usuario($resultado["id"],$resultado["nombre_usuario"],$email,$resultado["password"],$resultado["fecha_registro"]);
+                    
+                }
+
+
+
+
+
+
+            }catch(PDOException $ex){
+
+                print "error" . $ex->getMessage(); 
+
+            }
+
+
+
+
+        }
+
+        return $usuario;
+
+
+    }
+
+
 }
