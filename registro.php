@@ -100,7 +100,7 @@ if(isset($_POST["enviar"])) {
                         <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="inicio-sesion.html">Iniciar sesión</a> 
+                        <a class="nav-link" href="inicio-sesion.php">Iniciar sesión</a> 
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="registro.php">Registrarse</a>
