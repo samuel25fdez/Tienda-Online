@@ -1,12 +1,36 @@
-CREATE DATABASE tienda_online;
+CREATE DATABASE tienda_online default character set utf8;
 USE tienda_online;
 CREATE TABLE usuarios (
-	id INT NOT NULL AUTO_INCREMENT,
+	id INT NOT NULL UNIQUE AUTO_INCREMENT,
 	nombre_usuario VARCHAR(40) UNIQUE NOT NULL,
 	email VARCHAR(40) UNIQUE NOT NULL,
 	password VARCHAR(255) NOT NULL,
 	fecha_registro DATETIME NOT NULL,
 	PRIMARY KEY(id)
 );
+CREATE TABLE entradas (
+	id INT NOT NULL UNIQUE AUTO_INCREMENT,
+	usuario_id INT NOT NULL,
+	titulo VARCHAR(255) UNIQUE NOT NULL,
+	descripcion TEXT CHARACTER SET utf8 NOT NULL,
+	fecha DATETIME NOT NULL,
+	url_img VARCHAR(255) UNIQUE NOT NULL,
+	PRIMARY KEY(id),
+	FOREIGN KEY(usuario_id) references usuarios(id) on update cascade on delete restrict
+
+);
+CREATE TABLE comentarios (
+	id INT NOT NULL UNIQUE AUTO_INCREMENT,
+	usuario_id INT NOT NULL,
+	entrada_id INT NOT NULL,
+	titulo VARCHAR(255) NOT NULL,
+	texto TEXT CHARACTER SET utf8 NOT NULL,
+	fecha DATETIME NOT NULL,
+	PRIMARY KEY(id),
+	FOREIGN KEY(usuario_id) references usuarios(id) on update cascade on delete restrict,
+	FOREIGN KEY(entrada_id) references entradas(id) on update cascade on delete restrict
+);	
+
+	
 
 INSERT INTO `usuarios` (`id`, `nombre_usuario`, `email`, `password`, `fecha_registro`) VALUES (NULL, 'JUAN', 'juan@gmail.com', '12345', '2021-03-02 16:21:34');

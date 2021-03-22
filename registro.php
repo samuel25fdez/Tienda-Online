@@ -88,37 +88,9 @@ if(isset($_POST["enviar"])) {
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.php"> <img src="images/logo_large.png" alt="alt" class="img-logo"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="inicio-sesion.php">Iniciar sesión</a> 
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="registro.php">Registrarse</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Marcas
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="adidas.html">Adidas</a></li>
-                          <li><a class="dropdown-item" href="nike.html">Nike</a></li>
-                          <li><a class="dropdown-item" href="vans.html">Vans</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+        <?php 
+            include_once "plantillas/navbar.inc.php";
+            ?>
             
         </header>
 
