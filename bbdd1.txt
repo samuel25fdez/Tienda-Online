@@ -13,6 +13,7 @@ CREATE TABLE entradas (
 	usuario_id INT NOT NULL,
 	titulo VARCHAR(255) UNIQUE NOT NULL,
 	descripcion TEXT CHARACTER SET utf8 NOT NULL,
+	url VARCHAR(255) NOT NULL UNIQUE,
 	fecha DATETIME NOT NULL,
 	url_img VARCHAR(255) UNIQUE NOT NULL,
 	PRIMARY KEY(id),
@@ -36,4 +37,4 @@ CREATE TABLE comentarios (
 INSERT INTO `usuarios` (`id`, `nombre_usuario`, `email`, `password`, `fecha_registro`) VALUES (NULL, 'JUAN', 'juan@gmail.com', '12345', '2021-03-02 16:21:34');
 
 
-INSERT INTO `entradas` (`id`, `usuario_id`, `titulo`, `descripcion`, `fecha`, `url_img`) VALUES (NULL, '2', 'adidas', 'adidass', '2021-03-23 17:09:15', 'https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatilla_Superstar_Bold_Women_Blanco_FV3336_01_standard.jpg');
+INSERT INTO `entradas` (`id`, `usuario_id`, `titulo`, `descripcion`, `url`, `fecha`, `url_img`) VALUES (NULL, '2', 'adidas', 'adidass', `alalla54154`, '2021-03-23 17:09:15', 'https://assets.adidas.com/images/w_600,f_auto,q_auto/7e03ecef81a64126bcecab58011051d8_9366/Zapatilla_Superstar_Bold_Women_Blanco_FV3336_01_standard.jpg');

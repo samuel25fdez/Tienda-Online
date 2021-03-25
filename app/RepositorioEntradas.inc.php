@@ -13,7 +13,7 @@ class RepositorioEntradas {
 
             try{
 
-                $sql="insert into entradas(usuario_id, titulo, descripcion, fecha, url_img) values (:usuario_id, :titulo, :descripcion, NOW(), :url_img)";
+                $sql="insert into entradas(usuario_id, titulo, descripcion, url, fecha, url_img) values (:usuario_id, :titulo, :descripcion, :url, NOW(), :url_img)";
 
                 $sentencia=$conexion->prepare($sql);
                 
@@ -23,6 +23,8 @@ class RepositorioEntradas {
 
                 $desc=$entrada->obtener_descripcion();
 
+                $u=$entrada->obtener_url_entrada();
+
                 $ur=$entrada->obtener_url();
 
                 $sentencia->bindParam(":usuario_id",$usu, PDO::PARAM_STR);
@@ -30,6 +32,8 @@ class RepositorioEntradas {
                 $sentencia->bindParam(":titulo",$titu, PDO::PARAM_STR);
 
                 $sentencia->bindParam(":descripcion",$desc, PDO::PARAM_STR);
+
+                $sentencia->bindParam(":url",$u, PDO::PARAM_STR);
 
                 $sentencia->bindParam(":url_img",$ur, PDO::PARAM_STR);
 
@@ -69,7 +73,7 @@ class RepositorioEntradas {
 
                     foreach($resultado as $fila) {
 
-                        $entradas[]=new Entrada($fila["id"],$fila["usuario_id"],$fila["titulo"],$fila["descripcion"],$fila["fecha"],$fila["url_img"]);
+                        $entradas[]=new Entrada($fila["id"],$fila["usuario_id"],$fila["titulo"],$fila["descripcion"],$fila["url"],$fila["fecha"],$fila["url_img"]);
 
                     }
                 }
@@ -88,6 +92,41 @@ class RepositorioEntradas {
         return $entradas;
 
 
+
+    }
+    public static function obtener_entrada_por_url($conexion, $url) {
+
+        $entrada=null;
+
+        if(isset($conexion)) {
+
+            try{
+
+                $sql="select * from entradas where url like :url";
+
+                $sentencia=$conexion->prepare($sql);
+
+                $sentencia->bindParam(":url",$url, PDO::PARAM_STR);
+
+                $sentencia->execute();
+
+                $resultado=$sentencia->fetch();
+
+                if(!empty($resultado)) {
+
+                    $entrada=new Entrada($resultado["id"],$resultado["usuario_id"],$resultado["titulo"],$resultado["descripcion"],$resultado["url"],$resultado["fecha"],$resultado["url_img"]);
+                }
+
+
+                
+            }catch(PDOException $ex) {
+
+                print "error: " . $ex->getMessage();
+
+            }
+
+        }
+        return $entrada;
 
     }
 

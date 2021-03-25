@@ -3,6 +3,8 @@
 include_once "app/ControlSesion.inc.php";
 include_once "app/config.inc.php";
 
+Conexion::abrir_conexion();
+
 
 
 ?>

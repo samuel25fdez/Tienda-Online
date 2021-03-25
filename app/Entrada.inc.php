@@ -6,15 +6,18 @@ class Entrada {
     private $usuario_id;
     private $titulo;
     private $descripcion;
+    private $url;
     private $fecha;
     private $url_img;
+    
 
-    public function __construct($id,$usuario_id,$titulo,$descripcion,$fecha,$url_img) {
+    public function __construct($id,$usuario_id,$titulo,$descripcion,$url,$fecha,$url_img) {
 
         $this->id=$id;
         $this->usuario_id=$usuario_id;
         $this->titulo=$titulo;
         $this->descripcion=$descripcion;
+        $this->url=$url;
         $this->fecha=$fecha;
         $this->url_img=$url_img;
 
@@ -35,6 +38,9 @@ class Entrada {
     public function obtener_descripcion() {
 
         return $this->descripcion;
+    }
+    public function obtener_url_entrada() {
+        return $this->url;
     }
     public function obtener_fecha() {
 
@@ -59,6 +65,10 @@ class Entrada {
 
         $this->descripcion=$nueva_desc;
 
+    }
+    public function cambiar_url_entrada($nuevo_url_entrada) {
+
+        $this->url=$nuevo_url_entrada;
     }
 
 

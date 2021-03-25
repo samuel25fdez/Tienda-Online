@@ -250,6 +250,41 @@ section{
 }
 
 
+/*estilos de la entrada del index*/
+
+.titulo-entrada {
+
+    width: 100%;
+    background: red;
+    color: blanchedalmond;
+    padding: 4px;
+    border: 5px solid black;
+
+
+}
+
+.entrada-cuerpo {
+
+    margin-top: 40px;
+}
+
+
+.cuerpo-entrada {
+
+    width: 100%;
+    background: blue;
+    border: 5px solid blueviolet;
+    padding: 8px;
+    color: white;
+
+}
+
+.imagen-longitud {
+
+width: 100px;
+
+}
+
 
     
 
