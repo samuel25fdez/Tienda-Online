@@ -38,37 +38,17 @@ if(isset($_POST["enviar"])) {
       Redirecciones::redirigir(RUTA_REGISTRO_CORRECTO . "?nombre=" . $cadena);
       
       
-
-
-     
-
     }
 
   }
 
 
-
-
-
-
   Conexion::cerrar_conexion();
-
-
 
 
 }
 
-
-
-
-
-
-
 ?>
-
-
-
-
 
 
 
@@ -76,7 +56,7 @@ if(isset($_POST["enviar"])) {
 <html>
     <head>
         <title>
-            Zapatillas molonas
+            Registrarse
         </title>
         <?php include_once "plantillas/head_declaration.inc.php" ?>
         
@@ -92,10 +72,7 @@ if(isset($_POST["enviar"])) {
 
         <div class="main-registro">
 
-        <form class="row g-3" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
-
-
-                
+        <form class="row g-3" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">         
                 
                 <?php
 
@@ -111,23 +88,15 @@ if(isset($_POST["enviar"])) {
 
                 ?>
 
-
             </form>
 
-
           </div>
-
-
-
-
 
           <?php 
         
           include_once "plantillas/footer.inc.php";
         
         ?>
-
-
 
 </body>
 </html>

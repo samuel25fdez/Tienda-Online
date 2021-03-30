@@ -113,13 +113,7 @@
             A lo largo del Catálogo Online de nuestra Web encontrarás los más de 400 modelos exclusivos que disponemos. <br><br>
             
             Servicio de Atención al Cliente 24/7 vía Instagram @zapatillasmolonas, o via web! <br><br>
-            
-            info@zapatillasmolonas.com
-
         </section>
-
-        
-    
 
         <?php 
         

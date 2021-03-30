@@ -1,0 +1,71 @@
+<?php
+
+include_once "app/Conexion.inc.php";
+include_once "app/RepositorioEntradas.inc.php";
+include_once "app/EscritorEntradas.inc.php";
+include_once "app/RepositorioUsuarios.inc.php";
+
+?>
+
+<div class="row">
+
+    <div class="col-md-12">
+    
+        <button type="button" role="button" class="btn btn-dark form-control" data-bs-toggle="collapse" data-bs-target="#comentarios" aria-expanded="false">
+        
+            <?php 
+            
+                echo "Ver comentarios (" . count($comentarios) . ")";
+            
+            ?>
+        
+        </button>
+
+        <br>
+        <br>
+
+        <div class="collapse" id="comentarios">
+        
+            <?php 
+            
+                for($i=0; $i<count($comentarios); $i++) {
+
+                    $comentario=$comentarios[$i]; 
+
+                    ?>
+
+                    <div class="row">
+                    
+                        <div class="col-md-12">
+                        
+                            <strong>
+                            
+                                <?php 
+                                
+                                    
+                                
+                                
+                                ?>
+                            
+                            </strong>
+                        
+                        </div>
+                    
+                    </div>
+
+
+
+                    <?php
+
+
+                }
+            
+            
+            
+            ?>
+        
+        </div>
+    
+    </div>
+
+</div>

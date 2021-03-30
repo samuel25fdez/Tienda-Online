@@ -245,5 +245,41 @@ class RepositorioUsuarios {
 
     }
 
+    public static function obtener_usuario_por_id($conexion, $id) {
+
+        $usuario=null;
+
+        if(isset($conexion)) {
+
+            try{
+
+                $sql="select * from usuarios where id= :id";
+
+                $sentencia=$conexion->prepare($sql);
+
+                $sentencia->bindParam(":id", $id, PDO::PARAM_STR);
+
+                $sentencia->execute();
+
+                $resultado=$sentencia->fetch();
+
+                if(!empty($resultado)) {
+
+                    $usuario=new Usuario($resultado["id"],$resultado["nombre_usuario"],$resultado["email"],$resultado["password"],$resultado["fecha_registro"]);
+
+                }
+
+            }catch(PDOException $ex){
+
+                print "error" . $ex->getMessage();
+            }
+
+        }
+        return $usuario;
+
+    }
+
+    
+
 
 }

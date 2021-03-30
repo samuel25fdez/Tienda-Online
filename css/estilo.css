@@ -1,17 +1,12 @@
 body {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    
     color:#333;
     font-size: 1.2rem;
     line-height: 1.6rem;
     margin-left: 80px;
     margin-right: 80px;
-    background-color: black;
-    
+    background-color: black;   
 }
-
-
-
 
 .primer-parrafo {
 
@@ -21,30 +16,15 @@ body {
     box-sizing:content-box;
 }
 
-
 .container-fluid {
 
     background-color:rgb(245, 221, 2);
-    
-    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform:uppercase;
+    font-size: 120%; 
 }
 
 
-
-
-}
-
-.container-section {
-    margin-top: 1000px;
-    
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: black;
-   
-    
-}
-.container-preguntas {
-    margin-top: 140px;
-}
 
 .img-logo {
     width: 220px;
@@ -62,19 +42,14 @@ header {
     top: 0;
     width: 100%;
     right: 0;
-    
-
 }
 
-header a{
+header a {
     color: white;
     text-decoration: none;
-
 }
 
-
-
-.logo-nav{
+.logo-nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -82,24 +57,24 @@ header a{
 
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
 
 }
 
-.navigation ul{
+.navigation ul {
     margin: 0;
     padding: 0;
     list-style: none;
     
 }
 
-.navigation ul li{
+.navigation ul li {
     display: inline-block;
 
 }
 
-.navigation ul li a{
+.navigation ul li a {
     display: block;
     padding: 0.5rem 1rem;
     transition: all 0.4s linear;
@@ -111,7 +86,7 @@ header a{
 
 
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
     background: #4a4a4a;
 
 }
@@ -134,18 +109,29 @@ header a{
 
 }
 
-
-section{
-    background: rgb(245, 221, 2);
+section {
+    color: black; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: rgb(245, 221, 2); 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 6px solid white;
+    
+   
     padding: 4rem 0;
     text-align: center;
     margin-top: 6rem;
 
 }
 
-
 .carrusel-div {
-    position:static;
+    position:sticky;
     width: 800px;
     height: 400px;
     margin-left: 28%;
@@ -154,21 +140,13 @@ section{
     margin-bottom: 0px;
     padding-top: 0%;
     padding-bottom: 0px;
-    
-    
+      
 }
-
-
-
 
 
 /*estilos para la página de inicio de sesión*/
 
-
-
-
-
-.div-inicio{
+.div-inicio {
     margin-top: 250px;
     margin-left: 50px;
     margin-right: 50px;
@@ -178,31 +156,11 @@ section{
     padding-right: 30px;
     padding-bottom: 30px;
     border-radius: 50px;
+    border: 5px solid white;
 
 }
-
-
-/*estilos pagina registro correcto*/
-
-
-.titulo-registro {
-
-    margin-left: 30%;
-    margin-right: 30%;
-    border: 3px solid blue;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: blueviolet;
-    margin-bottom: 100px;
-    margin-top: 400px;
-
-
-}
-
-
 
 /*estilos para la página de registro*/
-
 
 .main-registro {
     
@@ -215,126 +173,215 @@ section{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    
-    
+    border: 5px solid white;
+      
 }
 
+/*estilos pagina registro correcto*/
 
+.titulo-registro {
 
-
-
-
-
-/*estilos vans*/
-
-.container-logos {
-    height: 10px;
-    width: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+   
+    border-radius: 8px;
+    padding: 10px;
     
-   margin-bottom: 0%;
-    float: right;
+    margin-bottom: 100px;
+    margin-top: 400px;
 
-    padding-left: 1px;
-    
-  
+    background: black;
+    border: 5px solid rgb(245, 221, 2);
+   
+    color: white;
 }
 
-.container-logos-2 {
-    height: 10px;
-    width: 50%;
-    
-    margin-bottom: 0%;
-    float: left;
-    
-  
-}
 
 
 /*estilos de la entrada del index*/
 
 .titulo-entrada {
 
-    width: 100%;
-    background: red;
-    color: blanchedalmond;
-    padding: 4px;
-    border: 5px solid black;
-
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform:uppercase;
+    
+    width: 20%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 5px solid rgb(245, 221, 2);
+    margin-bottom: 10px;
+    margin-left: 25%;
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 3px solid rgb(245, 221, 2);
 
 }
 
 .entrada-cuerpo {
 
     margin-top: 40px;
+    
 }
 
 
 .cuerpo-entrada {
 
-    width: 100%;
-    background: blue;
-    border: 5px solid blueviolet;
-    padding: 8px;
-    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 55%;
+    background: black;
+    border: 5px solid rgb(245, 221, 2);
+    padding: 10px;
+    color: white; 
+    margin-left: 25%;
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 3px solid rgb(245, 221, 2);
 
 }
 
 .imagen-longitud {
 
-width: 100px;
+width: 40%;
 
 }
 
+/*foooter.inc*/
 
+
+
+.container-logos {
+    height: 50%;
+    width: 50%;
+    float: right;
+    border-radius: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
     
-
-
-
-
-
-
-
-
-/*foooter*/
-
-
-
-
-
-
-
-
-
+}
 
 
 
 
 .link-preguntas {
 
+  
     color:white;
-    margin-left: 38%;
-    float:left;
-
+    margin-left: 45%;
+    
+    
+    
 }
+.link-preguntas2 {
 
-
-.titulo-colonia {
-    color: rgb(245, 221, 2);
-    margin-left: 30%;
-    float:left;
+    
+    color:rgb(245, 221, 2);
+    margin-left: 35%;
+    
+    
     
 }
 
 
+.titulo-web {
+    color: rgb(245, 221, 2);
+   margin-left: 35%;
+    
+    
+}
 
+/*estilos pag preguntas frecuentes*/
+.caja-titulo-productos2 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: black; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: rgb(245, 221, 2); 
+    margin: 5% 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid rgb(245, 221, 2)
+    
 
+}
+.primer-parrafo2 {
+    
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    background-image: url(images/imagen-fondo-web.png);
+    color: rgb(245, 221, 2);
+    box-sizing:content-box;
+}
 
-
+.container-preguntas {
+    margin-top: 5%;
+}
 
 .lista-preguntas {
-    margin-left: 30px;
+    
+    
+   
     padding-left: 0%;
-    background: rgb(81, 81, 179);
+    
+}
+
+/*estilo para entrada.php*/
+
+.dejar-espacio-entrada {
+
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.imagen-producto {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagen-entrada-producto {
+
+    width: 25%;
+}
+
+.titulo-entrada-producto {
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform:uppercase;
+    
+    width: 20%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 5px solid rgb(245, 221, 2);
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 3px solid rgb(245, 221, 2);
+    
+}
+
+.descripcion-producto {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150%;
+}
+
+.boton-carrito {
+
+    
+    margin-top: 20px;
+    margin-left: 45%;
 }
 
 

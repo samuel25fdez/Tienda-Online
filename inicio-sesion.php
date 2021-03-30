@@ -47,8 +47,11 @@ if(isset($_POST["login"])) {
         <title>
             iniciar sesion
         </title>
+        <?php
+        include_once "plantillas/head_declaration.inc.php";
+        ?>
        
-        <?php include_once "plantillas/head_declaration.inc.php" ?>
+        
     </head>
     <body>
         <header>

@@ -1,79 +1,39 @@
+
 <section>
-
-
 
         <div class="container-logos" >
             REDES SOCIALES
-         
-        
+            <br>
+            <br>
           <div class="" >
-            <a href="#"><img src="images/social_facebook_fb_35.png"  width="50px" height="25px" alt="facebook"></a>
-            <a href="#"><img src="images/" alt="youtube"></a>
-            <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
-            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100065622810500"><img src="images/facebook.png"  width="6%" height="6%" alt="facebook"></a>
+            <a href="https://www.instagram.com/zapasmolonas1/"><img src="images/instagram.png"  width="6%" height="6%" alt="instagram"></a>
+            <a href="https://twitter.com/ZMolonas"><img src="images/twitter.png"  width="6%" height="6%" alt="twitter"></a>
           </div>
         </div>
-  
-
-          
-
-        
-
-          <div class="container-logos-2" >
+          <div class="container-logos" >
+            <br>
             <p>
-              CONTACTA CON NOSOTROS
+              CONTACTA CON NOSOTROS:
             </p>
-          
+          <br>
             <p> 
               zapatillasmolonas@gmail.com
             </p>
-    
+          </div>
+              
 </section>
+
 <footer>
-<br>
-<br>
-<br>
-
-        <a class="link-preguntas" href="preguntas.html">PREGUNTAS FRECUENTES</a>
-
+        <a class="link-preguntas" href="preguntas.php">PREGUNTAS FRECUENTES</a>
         <br>
         <br>
+        <a class="link-preguntas2" href="index.php">2021 - Página web desarrollada por Samuel Fernández Roca</a>
         <br>
-         
-            <p>
-          
-                
-          
-               <span class="titulo-colonia">
-                2021 - Página web desarrollada por Samuel Fernández Roca
-          
-               </span>
-          
-                   </p>
-          
-                   
-
-                   
-          
-                   
-                 </div>
-              </div>
-          </div>
-          </div>
-          
-          
-          
-          
-          
-          </div>
-          
-          
-          
-          
-          
-          
-          
-          </footer>
+        <br>
+            
+       
+</footer>
 
           <?php 
           
