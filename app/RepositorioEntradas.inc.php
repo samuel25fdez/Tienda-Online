@@ -129,5 +129,34 @@ class RepositorioEntradas {
         return $entrada;
 
     }
+    public static function obtener_productos_azar($conexion,$limite) {
+
+        $productos=[];
+
+        if(isset($conexion)) {
+
+            try{
+
+                $sql="select * from entradas order by rand() limit $limite";
+
+                $sentencia=$conexion->prepare($sql);
+
+                $sentencia->execute();
+
+                $resultado=$sentencia->fetchAll();
+
+                
+
+            }catch(PDOException $ex) {
+
+                print "error: " . $ex->getMessage();
+
+            }
+
+            
+        }
+
+        return $productos;
+    }
 
 }

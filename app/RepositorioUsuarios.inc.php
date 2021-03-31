@@ -253,6 +253,8 @@ class RepositorioUsuarios {
 
             try{
 
+                include_once "Usuario.inc.php";
+
                 $sql="select * from usuarios where id= :id";
 
                 $sentencia=$conexion->prepare($sql);

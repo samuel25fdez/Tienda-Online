@@ -6,6 +6,8 @@ include_once "app/Conexion.inc.php";
 include_once "app/Entrada.inc.php";
 include_once "app/RepositorioEntradas.inc.php";
 include_once "app/RepositorioComentarios.inc.php";
+include_once "app/Comentario.inc.php";
+include_once "app/RepositorioUsuarios.inc.php";
 
 
 Conexion::abrir_conexion();
@@ -32,8 +34,11 @@ Conexion::cerrar_conexion();
 <html lang="en">
     <head>
         <?php
-            include_once "plantillas/head_declaration.inc.php";
+           include_once "plantillas/head_declaration.inc.php";
         ?>
+
+        <title>Entrada</title>
+
     </head>
 
     <body>
@@ -122,13 +127,22 @@ Conexion::cerrar_conexion();
             </div>
 
 
+            <div class="productos-recomendados">
+            
+                    <?php
+                        include_once "plantillas/productos_azar.inc.php";
+                    ?>
+            
+            </div>
+
+
         </div>
 
 
-        <?php 
-                
-                include_once "plantillas/footer.inc.php";
-                
+         <?php 
+        
+          include_once "plantillas/footer.inc.php";
+        
         ?>
         
     </body>
