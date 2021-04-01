@@ -24,6 +24,8 @@ if(isset($_GET["url"]) && !empty($_GET["url"])) {
 
 $entrada=RepositorioEntradas::obtener_entrada_por_url(Conexion::obtener_conexion(),$url_entrada);
 
+
+
 $id_entrada=$entrada->obtener_id();
 
 Conexion::cerrar_conexion();

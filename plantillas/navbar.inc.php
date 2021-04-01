@@ -28,7 +28,7 @@ Conexion::abrir_conexion();
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="perfil.php"><?php echo $_SESSION["nombre_usuario"] ?></a>
           </li>
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Marcas

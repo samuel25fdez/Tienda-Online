@@ -340,6 +340,13 @@ width: 40%;
     margin-bottom: 200px;
 }
 
+.imagen-longitud {
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 3px solid rgb(245, 221, 2); 
+}
+
 .imagen-producto {
 
     margin-top: 20px;
@@ -349,6 +356,10 @@ width: 40%;
 .imagen-entrada-producto {
 
     width: 25%;
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 3px solid rgb(245, 221, 2); 
 }
 
 .titulo-entrada-producto {
@@ -361,7 +372,7 @@ width: 40%;
     color: white;
     padding: 10px;
     border: 5px solid rgb(245, 221, 2);
-    
+    margin-bottom: 1px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 35px 35px 35px 35px; 
@@ -372,7 +383,7 @@ width: 40%;
 }
 
 .descripcion-producto {
-
+    margin-top: 1px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 150%;
 }
@@ -400,6 +411,23 @@ width: 40%;
 }
 
 .cuerpo-comentario {
+
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 1px;
+    width: 100%;
+    background: white;
+    color: black;
+    padding: 10px;
+    border: 5px solid rgb(245, 221, 2);
+    
+    margin-left: 5px;
+    
+    
+    border: 5px solid rgb(245, 221, 2);
+}
+
+.comentarios-entrada {
 
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 30px;

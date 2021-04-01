@@ -111,9 +111,9 @@ class RepositorioEntradas {
                 $sentencia->execute();
 
                 $resultado=$sentencia->fetch();
-
+                
                 if(!empty($resultado)) {
-
+                   
                     $entrada=new Entrada($resultado["id"],$resultado["usuario_id"],$resultado["titulo"],$resultado["descripcion"],$resultado["url"],$resultado["fecha"],$resultado["url_img"]);
                 }
 
@@ -145,7 +145,16 @@ class RepositorioEntradas {
 
                 $resultado=$sentencia->fetchAll();
 
-                
+                if(!empty($resultado)) {
+
+                    foreach($resultado as $fila) {
+
+                       $productos[]=new Entrada($fila["id"],$fila["usuario_id"],$fila["titulo"],$fila["descripcion"],$fila["url"],$fila["fecha"],$fila["url_img"]);
+
+
+                    } 
+
+                }
 
             }catch(PDOException $ex) {
 
