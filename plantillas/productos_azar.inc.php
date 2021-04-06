@@ -16,10 +16,10 @@ $productos_azar=RepositorioEntradas::obtener_productos_azar(Conexion::obtener_co
     <div class="col-md-12">
 
         <br>
-        <hr>
-
-        <h3>Productos recomendados</h3>
-
+        <hr style="height:10px" color="white">
+        <div class="h3-titulo">
+        <h3>PRODUCTOS RECOMENDADOS</h3>
+        </div>
         <br>
 
     </div>
@@ -63,7 +63,7 @@ $productos_azar=RepositorioEntradas::obtener_productos_azar(Conexion::obtener_co
 
                             <div>
                         
-                                <img class="imagen-longitud" src="<?php echo $producto_azar->obtener_url();?>" alt="alt">
+                                <img class="imagen-longitud-recomendados" src="<?php echo $producto_azar->obtener_url();?>" alt="alt">
                     
                             </div>
 

@@ -32,6 +32,13 @@ CREATE TABLE comentarios (
 	FOREIGN KEY(entrada_id) references entradas(id) on update cascade on delete restrict
 );	
 
+CREATE TABLE entradas_favoritas (
+	id_usuario INT NOT NULL,
+	id_entrada INT NOT NULL,
+	PRIMARY KEY(id_usuario, id_entrada),
+	FOREIGN KEY(id_usuario) references usuarios(id) on update cascade on delete restrict,
+	FOREIGN KEY(id_entrada) references entradas(id) on update cascade on delete restrict
+);
 	
 
 INSERT INTO `usuarios` (`id`, `nombre_usuario`, `email`, `password`, `fecha_registro`) VALUES (NULL, 'JUAN', 'juan@gmail.com', '12345', '2021-03-02 16:21:34');

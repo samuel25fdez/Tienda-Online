@@ -168,4 +168,62 @@ class RepositorioEntradas {
         return $productos;
     }
 
+    public static function insertar_entrada_carrito ($conexion,$id_usuario,$id_entrada) {
+
+        $insertada=false;
+        
+        if(isset($conexion)) {
+
+            try{
+
+                $sql="insert into entradas_favoritas(id_usuario,id_entrada) values(:id_usuario,:id_entrada)";
+                $sentencia=$conexion->prepare($sql);
+                $sentencia->bindParam(":id_usuario",$id_usuario, PDO::PARAM_STR);
+                $sentencia->bindParam(":id_entrada",$id_entrada, PDO::PARAM_STR);
+                $insertada=$sentencia->execute();
+
+
+
+            }catch(PDOException $ex) {
+
+                print "error: " . $ex->getMessage();
+
+            }
+        }
+
+        return $insertada;
+    }
+
+    public static function obtener_entradas_carrito($conexion,$id_usuario) {
+
+        $entradas_carrito=[];
+
+        if(isset($conexion)) {
+
+            try{
+
+                $sql="select * from entradas_favoritas where id_usuario=:id_usuario";
+                $sentencia=$conexion->prepare($sql);
+                $sentencia->bindParam(":id_usuario",$id_usuario, PDO::PARAM_STR);
+                $sentencia->execute();
+                $resultado=$sentencia->fetchAll();
+
+                if(count($resultado)) {
+
+                    foreach($resultado as $fila){
+
+                        $entradas_carrito[]=$fila["id_entrada"];
+                    }
+                }
+
+
+            }catch(PDOException $ex) {
+
+                print "error: " . $ex->getMessage();
+
+            }
+        }
+        return $entradas_carrito;
+    }
+
 }

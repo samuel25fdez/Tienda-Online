@@ -10,6 +10,8 @@ define("RUTA_REGISTRO",SERVIDOR . "/registro.php");
 define("RUTA_LOGIN",SERVIDOR . "/inicio-sesion.php");
 define("RUTA_REGISTRO_CORRECTO",SERVIDOR . "/registro-correcto.php");
 define("RUTA_ENTRADA",SERVIDOR .  "/entrada.php");
+define("RUTA_INSERTAR_FAVORITOS",SERVIDOR . "/guardar_carrito.php");
+define("RUTA_CARRITO",SERVIDOR . "/carrito.php");
 
 
 

@@ -32,7 +32,7 @@ body {
 
 
 header {
-    background: rgb(245, 221, 2);
+    background: rgb(245, 221, 2) !important;
     color: rgb(245, 221, 2);
     padding: 2rem 0;
     padding-left: 280px;
@@ -442,4 +442,67 @@ width: 40%;
     
     
     border: 5px solid rgb(245, 221, 2);
+}
+
+/* estilos productos recomendados*/
+
+.h3-titulo {
+
+    color: white;
+    text-align: center;
+    border: 5px solid rgb(245, 221, 2);
+    width: 85%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+.titulo-entrada-recomendados {
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform:uppercase;
+    
+    width: 50%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 5px solid rgb(245, 221, 2);
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 3px solid rgb(245, 221, 2);
+}
+
+.cuerpo-entrada-recomendados {
+
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform:uppercase;
+    margin-top: 3px;
+    width: 50%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 5px solid rgb(245, 221, 2);
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 3px solid rgb(245, 221, 2);
+}
+
+.imagen-longitud-recomendados {
+
+    width: 100%;
 }
