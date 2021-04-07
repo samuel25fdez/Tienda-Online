@@ -226,4 +226,64 @@ class RepositorioEntradas {
         return $entradas_carrito;
     }
 
+    public static function obtener_entrada_por_id($conexion,$id) {
+
+        $entrada=null;
+
+        if(isset($conexion)) {
+
+            try{
+                include_once "Entrada.inc.php";
+
+                $sql="select * from entradas where id=:id";
+                $sentencia=$conexion->prepare($sql);
+                $sentencia->bindParam(":id",$id,PDO::PARAM_STR);
+                $sentencia->execute();
+                $resultado=$sentencia->fetch();
+                
+                if(!empty($resultado)) {
+
+                    $entrada=new Entrada($id,$resultado["usuario_id"],$resultado["titulo"],$resultado["descripcion"],$resultado["url"],$resultado["fecha"],$resultado["url_img"]);
+
+                    
+                }
+
+
+
+
+            }catch(PDOException $ex) {
+
+                print "error: " . $ex->getMessage();
+
+            }
+        }
+        return $entrada;
+    }
+
+    public static function quitar_entrada_carrito($conexion,$id_usuario,$id_entrada) {
+
+        $quitada=false;
+
+        if(isset($conexion)) {
+
+            try{
+
+                $sql="Delete from entradas_favoritas where id_usuario=:id_usuario and id_entrada=:id_entrada";
+                $sentencia=$conexion->prepare($sql);
+                $sentencia->bindParam(":id_usuario",$id_usuario,PDO::PARAM_STR);
+                $sentencia->bindParam(":id_entrada",$id_entrada,PDO::PARAM_STR);
+                $quitada=$sentencia->execute();
+                
+
+
+            }catch(PDOException $ex) {
+
+                print "error: " . $ex->getMessage();
+
+            }
+        }
+
+        return $quitada;
+    }
+
 }

@@ -12,6 +12,7 @@ define("RUTA_REGISTRO_CORRECTO",SERVIDOR . "/registro-correcto.php");
 define("RUTA_ENTRADA",SERVIDOR .  "/entrada.php");
 define("RUTA_INSERTAR_FAVORITOS",SERVIDOR . "/guardar_carrito.php");
 define("RUTA_CARRITO",SERVIDOR . "/carrito.php");
+define("RUTA_QUITAR_CARRITO",SERVIDOR . "/quitar_producto_carrito.php");
 
 
 

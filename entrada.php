@@ -83,7 +83,7 @@ Conexion::cerrar_conexion();
                                 <?php echo nl2br($entrada->obtener_descripcion()); ?>
 
                             </div>
-                            </section>
+                    </section>
                             <div class="boton-carrito">
                                 
                                  <a href="<?php echo RUTA_INSERTAR_FAVORITOS . "?id_entrada=" . $entrada->obtener_id(); ?>">
