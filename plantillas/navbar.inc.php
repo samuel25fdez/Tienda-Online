@@ -30,14 +30,10 @@ Conexion::abrir_conexion();
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="perfil.php"><?php echo $_SESSION["nombre_usuario"] ?></a>
           </li>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Marcas
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="adidas.html">Adidas</a></li>
-            <li><a class="dropdown-item" href="nike.html">Nike</a></li>
-            <li><a class="dropdown-item" href="vans.html">Vans</a></li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="ver_productos.php">Productos</a>
+
+          </li>
         </li>
           
           </li>
@@ -78,15 +74,9 @@ Conexion::abrir_conexion();
         <li class="nav-item">
           <a class="nav-link" href="registro.php">Registrarse</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Marcas
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="adidas.html">Adidas</a></li>
-            <li><a class="dropdown-item" href="nike.html">Nike</a></li>
-            <li><a class="dropdown-item" href="vans.html">Vans</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="ver_productos.php">Productos</a>
+
         </li>
       </ul>
       <?php

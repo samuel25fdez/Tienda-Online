@@ -286,4 +286,38 @@ class RepositorioEntradas {
         return $quitada;
     }
 
+    public static function ver_todos_los_productos($conexion) {
+
+        $productos=[];
+
+        if(isset($conexion)) {
+
+            try{
+
+                $sql="select * from entradas";
+                $sentencia=$conexion->prepare($sql);
+                $sentencia->execute();
+                $resultado=$sentencia->fetchAll();
+
+                if(!empty($resultado)){
+
+                    foreach($resultado as $fila) {
+
+                        $productos[]=new Entrada($fila["id"],$fila["usuario_id"],$fila["titulo"],$fila["descripcion"],$fila["url"],$fila["fecha"],$fila["url_img"]);
+                    }
+                }
+
+               
+
+
+            }catch(PDOException $ex) {
+
+                print "error: " . $ex->getMessage();
+
+            }
+        }
+
+        return $productos;
+    }
+
 }

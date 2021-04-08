@@ -108,7 +108,7 @@ include_once "app/Entrada.inc.php";
 
             ?>
 <div class="boton-pedido">
-            <a href="">
+            <a href="<?php echo RUTA_REALIZAR_PEDIDO ?>">
                 
             
              <button class="btn btn-warning btn-lg">Realizar pedido</button>
