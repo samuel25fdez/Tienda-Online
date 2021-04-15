@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include_once "app/config.inc.php";
 include_once "app/Redirecciones.inc.php";
 include_once "app/Conexion.inc.php";
@@ -29,6 +29,27 @@ $entrada=RepositorioEntradas::obtener_entrada_por_url(Conexion::obtener_conexion
 $id_entrada=$entrada->obtener_id();
 
 Conexion::cerrar_conexion();
+
+if(isset($_POST["guardar"])){
+
+    include_once "app/ControlSesion.inc.php";
+
+    if(ControlSesion::sesion_iniciada()){
+
+        Conexion::abrir_conexion();
+
+        $comentario=new Comentario("",$_SESSION["id_usuario"],$id_entrada,$_POST["titulo"],$_POST["texto"],"");
+    
+        $comentario_insertado=RepositorioComentarios::insertar_comentarios(Conexion::obtener_conexion(),$comentario);
+    
+        Conexion::cerrar_conexion();
+
+    }
+
+   
+
+
+}
 
 ?>
 
@@ -61,15 +82,16 @@ Conexion::cerrar_conexion();
                     <div>
                         
                     
-                        <div class="titulo-entrada-producto">
-
-                            <h3>
-                                <strong> <?php echo $entrada->obtener_titulo(); ?></strong>
-                            </h3>
-
-                        </div>
+                       
                     
                     <section>
+                    <div class="titulo-entrada-producto">
+
+<h3>
+    <strong> <?php echo $entrada->obtener_titulo(); ?></strong>
+</h3>
+
+</div>
                         <div class="cuerpo-entrada-producto">
                         
                             <div class="imagen-producto">
@@ -106,6 +128,68 @@ Conexion::cerrar_conexion();
                 </div>
 
             
+            </div>
+
+            <div class="nuevo-comentario">
+            
+                <div class="row">
+
+                    <p class="encabezado-comentario"><strong>Deja tu comentario:</strong></p>
+                    
+                    <div class="formulario-comentarios">
+
+
+                        <div class="row">
+                        
+                            <div class="col-md-12">
+                            
+                                <form class="row g-3" action="<?php echo RUTA_ENTRADA . "?url=" . $entrada->obtener_url_entrada(); ?>" method="post">
+                                
+                                    <div class="col-md-12">
+
+                                        <label  class="form-label" for="titulo">
+                                        
+                                           <div class="titulo-comentario-usuario">Título del comentario</div> 
+                                        
+                                        </label>
+
+                                        <input type="text" class="form-control" id="titulo-comentario" name="titulo" required>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+
+                                        <label class="form-label" for="cuerpo">
+                                        
+                                           <div class="titulo-comentario-usuario">Texto del comentario</div> 
+                                        
+                                        </label>
+
+                                        <textarea name="texto" id="contenido-comentario" class="form-control" rows="10" required></textarea>
+
+                                    </div>
+                                
+                                    <div>
+                                    
+                                        <button type="submit" class="btn btn-dark" name="guardar">
+                                        
+                                            Publicar comentario
+
+                                        </button>
+                                    
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+                    
+                    
+                    </div>
+
+                </div>
+
             </div>
         
             <div class="comentarios-entrada">

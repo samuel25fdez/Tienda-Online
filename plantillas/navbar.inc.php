@@ -38,9 +38,6 @@ Conexion::abrir_conexion();
           
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Ajustes</a> 
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="LogOut.php">Cerrar sesión</a> 
           </li>
           <li class="nav-item dropdown">

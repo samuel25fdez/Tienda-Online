@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 include_once "app/config.inc.php";
 include_once "app/Conexion.inc.php";
 include_once "app/RepositorioEntradas.inc.php";
@@ -10,7 +10,7 @@ include_once "app/Entrada.inc.php";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 
     <?php include_once "plantillas/head_declaration.inc.php"; ?>
@@ -107,6 +107,17 @@ include_once "app/Entrada.inc.php";
             }
 
             ?>
+
+           
+<div class="forma-de-pago">
+        
+        <h3>Forma de pago: contra reembolso</h3>
+
+        <h3>Envío: de 7 a 20 días</h3>
+    <br>
+        <h4>El pedido se enviará a la dirección que nos facilitaste en el formulario de registro</h4>
+        
+        </div>
 <div class="boton-pedido">
             <a href="<?php echo RUTA_REALIZAR_PEDIDO ?>">
                 
@@ -117,16 +128,41 @@ include_once "app/Entrada.inc.php";
 
             </div>
 
+
+            
+
+            
+
+           
             <?php
 
         }else {
 
-            echo "Tu carrito está vacío.";
+            ?>
+
+            <div class="carrito-vacio">
+
+                <p>
+
+                    Tu carrito está vacío
+                
+                </p>
+
+
+            </div>
+
+            <?php
+
+            
         }
     
-    ?>
+            ?>
+            
+           
 
+    
 
+   
 
     <?php include_once "plantillas/footer.inc.php"; ?>
 

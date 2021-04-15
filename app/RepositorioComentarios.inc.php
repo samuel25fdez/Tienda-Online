@@ -3,6 +3,7 @@
 include_once "config.inc.php";
 include_once "Conexion.inc.php";
 
+
 class RepositorioComentarios {
 
     public static function insertar_comentarios($conexion,$comentario) {

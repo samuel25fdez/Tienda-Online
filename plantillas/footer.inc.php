@@ -18,7 +18,7 @@
             </p>
           <br>
             <p> 
-              zapatillasmolonas@gmail.com
+              zapatillasmolonasinfo@gmail.com
             </p>
           </div>
               

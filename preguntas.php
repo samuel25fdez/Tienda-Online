@@ -1,5 +1,5 @@
 <?php
-
+session_start();
   include_once "app/Conexion.inc.php";
  
 
@@ -57,7 +57,7 @@
             <ul class="lista-preguntas">
               
               <strong>¿Cuánto tardan los envios?</strong>
-                <p>Los envíos tardan entre 7 y 20 días laborables.</p>
+                <p>Los envíos tardan entre 7 y 20 días laborables en condiciones normales.</p>
               <br>
               <strong> ¿Por qué confiar en Zapatillas Molonas? </strong>
                 <p>Somos una empresa joven que se compromete con sus clientes, al ser una compañía pequeña ofrecemos el mejor servicio y nos fijamos en los pequeños detalles.</p>
@@ -68,8 +68,8 @@
               <strong> ¿Qué sucede si intentan entregar mi paquete y no estoy en mi domicilio? </strong>
                 <p>Correos te avisará con antelación de que te va a entregar el pedido, aún así si se da el caso de entrega fallida puedes contactar con ellos para solicitar un nuevo día de entrega o incluso para recogerlo en una oficina de correos.</p>
               <br>
-              <strong>¿Por qué no se pueden hacer envíos a contra reembolso?</strong>
-                <p>El pedido sale directamente desde China al domicilio indicado en tu perfil, al ser un envio internacional correos no nos da la posibilidad de contra reembolso como método de pago.</p>
+              <strong>¿Por qué solo se pueden hacer pagos a contra reembolso?</strong>
+                <p>Queremos que tengas la total tranquilidad de que tu dinero está a salvo y es por eso que preferimos que nuestros clientes hagan el pago cuando reciban correctamente su pedido.</p>
              <br>
              <strong>No he recibido mi pedido</strong>
                 <p>Garantizamos la devolución del importe si no has recibido el artículo encargado antes de 60 días. Si han pasado 60 días y no has recibido el artículo encargado, puedes solicitar el reembolso total del mismo enviando un correo desde el apartado de contacto indicando la referencia del pedido. Una vez solicitado el reembolso nuestro equipo estudiará su caso y le comunicará una resolución en un plazo de 72h.</p>

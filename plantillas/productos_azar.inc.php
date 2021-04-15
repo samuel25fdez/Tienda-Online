@@ -16,7 +16,7 @@ $productos_azar=RepositorioEntradas::obtener_productos_azar(Conexion::obtener_co
     <div class="col-md-12">
 
         <br>
-        <hr style="height:10px" color="white">
+        
         <div class="h3-titulo">
         <h3>PRODUCTOS RECOMENDADOS</h3>
         </div>

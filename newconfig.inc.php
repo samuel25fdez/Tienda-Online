@@ -1,11 +1,11 @@
 <?php
 
 define("NOMBRE_SERVIDOR","localhost");
-define("NOMBRE_USUARIO","root");
-define("PASSWORD","");
-define("NOMBRE_BBDD","tienda_online");
+define("NOMBRE_USUARIO","id16565631_zapatillasmolonasbbdd");
+define("PASSWORD","{Fk#N66/QKbUb-@N");
+define("NOMBRE_BBDD","id16565631_zapatillasmolonas");
 
-define("SERVIDOR","http://localhost/website");
+define("SERVIDOR","https://zapatillasmolonas.000webhostapp.com");
 define("RUTA_REGISTRO",SERVIDOR . "/registro.php");
 define("RUTA_LOGIN",SERVIDOR . "/inicio-sesion.php");
 define("RUTA_REGISTRO_CORRECTO",SERVIDOR . "/registro-correcto.php");

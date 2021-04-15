@@ -32,6 +32,10 @@ $validador->mostrar_error_email();
 <label for="inputCity" class="form-label">Ciudad</label>
 <input type="text" class="form-control" id="inputCity">
 </div>
+<div class="col-md-6">
+<label for="inputCity" class="form-label">Ciudad</label>
+<input type="text" class="form-control" id="inputCity">
+</div>
 <div class="col-md-4">
 <label for="inputState" class="form-label">País</label>
 <select id="inputState" class="form-select">

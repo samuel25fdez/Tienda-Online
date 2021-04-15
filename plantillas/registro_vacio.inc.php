@@ -18,6 +18,10 @@
                 <label for="inputCity" class="form-label">Ciudad</label>
                 <input type="text" class="form-control" id="inputCity">
                 </div>
+                <div class="col-md-6">
+                <label for="#" class="form-label">Calle y número</label>
+                <input type="text" class="form-control" id="#">
+                </div>
                 <div class="col-md-4">
                 <label for="inputState" class="form-label">País</label>
                 <select id="inputState" class="form-select">
@@ -38,5 +42,5 @@
                 </div>
                 </div>
                 <div class="col-12">
-                <button type="submit" class="btn btn-primary" name="enviar">Sign in</button>
+                <button type="submit" class="btn btn-primary" name="enviar">Registrarse</button>
                 </div>

@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 include_once "app/config.inc.php";
 include_once "app/Conexion.inc.php";
 include_once "app/RepositorioUsuarios.inc.php";
@@ -107,7 +107,7 @@ if(isset($_POST["login"])) {
                   
                 </div>
 
-                <button type="submit" class="btn btn-primary" name="login">Submit</button>
+                <button type="submit" class="btn btn-primary" name="login">Iniciar sesión</button>
               </form>
         </div>
 

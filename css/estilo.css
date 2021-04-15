@@ -1,5 +1,5 @@
 body {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;   
     color:#333;
     font-size: 1.2rem;
     line-height: 1.6rem;
@@ -8,9 +8,11 @@ body {
     background-color: black;   
 }
 
+
+
 .primer-parrafo {
 
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url(images/imagen-fondo-web.png);
     color: rgb(245, 221, 2);
     box-sizing:content-box;
@@ -296,7 +298,7 @@ width: 40%;
 
 /*estilos pag preguntas frecuentes*/
 .caja-titulo-productos2 {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-family: Arial, Helvetica, sans-serif; 
     color: black; 
     font-size: 18px; 
     font-weight: 400; 
@@ -314,7 +316,7 @@ width: 40%;
 }
 .primer-parrafo2 {
     
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url(images/imagen-fondo-web.png);
     color: rgb(245, 221, 2);
     box-sizing:content-box;
@@ -355,7 +357,7 @@ width: 40%;
 
 .imagen-entrada-producto {
 
-    width: 25%;
+    width: 35%;
     border-radius: 35px 35px 35px 35px; 
     -moz-border-radius: 35px 35px 35px 35px; 
     -webkit-border-radius: 35px 35px 35px 35px;
@@ -364,7 +366,41 @@ width: 40%;
 
 .titulo-entrada-producto {
 
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    width: 40%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 5px solid rgb(245, 221, 2);
+    margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 3px solid white;
+    
+}
+
+.descripcion-producto {
+    margin-top: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.boton-carrito {
+
+    
+    margin-top: 20px;
+    margin-left: 45%;
+}
+
+/*estilos productos */
+
+.titulo-entrada-producto2 {
+    margin-top: 50px;
+    font-family:Arial, Helvetica, sans-serif;
     text-transform:uppercase;
     
     width: 20%;
@@ -379,35 +415,48 @@ width: 40%;
     -moz-border-radius: 35px 35px 35px 35px; 
     -webkit-border-radius: 35px 35px 35px 35px; 
     border: 3px solid rgb(245, 221, 2);
-    
+}
+.section-productos {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
-.descripcion-producto {
-    margin-top: 1px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 150%;
-}
+.boton-carrito2 {
 
-.boton-carrito {
-
-    
-    margin-top: 20px;
-    margin-left: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
 }
 
 /*estilos comentarios entrada*/
 
+.nuevo-comentario {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.encabezado-comentario{
+
+    text-align: center;
+    color: white;
+}
+
 .titulo-comentario {
 
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     width: 15%;
     background: white;
     color: black;
     padding: 10px;
-    border: 5px solid rgb(245, 221, 2);
+    
     margin-left: 5px;
     margin-bottom: 1px;
-    border: 5px solid rgb(245, 221, 2);
+    border: 5px solid grey;
+    border-radius: 15px 15px 15px 15px; 
+    -moz-border-radius: 15px 15px 15px 15px; 
+    -webkit-border-radius: 15px 15px 15px 15px; 
 }
 
 .cuerpo-comentario {
@@ -419,30 +468,29 @@ width: 40%;
     background: white;
     color: black;
     padding: 10px;
-    border: 5px solid rgb(245, 221, 2);
+    
     
     margin-left: 5px;
     
     
-    border: 5px solid rgb(245, 221, 2);
+    border: 5px solid grey;
+    border-radius: 15px 15px 15px 15px; 
+    -moz-border-radius: 15px 15px 15px 15px; 
+    -webkit-border-radius: 15px 15px 15px 15px; 
 }
 
 .comentarios-entrada {
-
-    font-family:Arial, Helvetica, sans-serif;
-    margin-bottom: 30px;
-    margin-top: 1px;
-    width: 100%;
-    background: white;
-    color: black;
-    padding: 10px;
-    border: 5px solid rgb(245, 221, 2);
-    
-    margin-left: 5px;
-    
-    
-    border: 5px solid rgb(245, 221, 2);
+    color: white;
 }
+
+
+
+/*estilos introduce tus comentarios*/
+
+.titulo-comentario-usuario {
+    color: white;
+}
+
 
 /* estilos productos recomendados*/
 
@@ -485,8 +533,7 @@ width: 40%;
 .cuerpo-entrada-recomendados {
 
     
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform:uppercase;
+    font-family:Arial, Helvetica, sans-serif;
     margin-top: 3px;
     width: 50%;
     background: black;
@@ -580,5 +627,57 @@ width: 40%;
     text-align: center;
     width: 60%;
     
+    
+}
+
+.forma-de-pago {
+    width: 50%;
+    color: black; 
+    font-size: 12px; 
+    font-weight: 200; 
+    text-align: center; 
+    margin-bottom: 2px;
+    margin-top: 5%;
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 35px 35px 35px; 
+    -moz-border-radius: 35px 35px 35px 35px; 
+    -webkit-border-radius: 35px 35px 35px 35px; 
+    border: 6px solid black;
+    background-color: white;
+     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.carrito-vacio {
+
+    width: 50%;
+    color: white;
+    
+}
+
+
+
+/*estilos pedido realizado correctamente*/
+
+.titulo-pedido-correcto {
+
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    background-image: url(images/imagen-fondo-web.png);
+    color: rgb(245, 221, 2);
+    box-sizing:content-box;
+    
+    
+}
+
+/*estilos perfil.php */
+
+.titulo-entrada-perfil {
+
+    color: violet;
+    
+   
     
 }
